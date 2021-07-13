@@ -1,4 +1,3 @@
-// @TODO: YOUR CODE HERE!
 
 var svgWidth = 1200;
 var svgHeight = 600;
@@ -23,7 +22,7 @@ var svg = d3.select("#scatter")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
   
-d3.csv("data.csv").then(function(data) {
+d3.csv("assets/data/data.csv").then(function(data) {
 
      data.forEach(function(data) {
         data.id = +data.id;
